@@ -1,230 +1,370 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
-}
-
-.description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
-  width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
-}
-
-.description a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.description p {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
-}
-
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  max-width: 100%;
-  width: var(--max-width);
-}
-
-.card {
-  padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
-}
-
-.card span {
-  display: inline-block;
-  transition: transform 200ms;
-}
-
-.card h2 {
-  font-weight: 600;
-  margin-bottom: 0.7rem;
-}
-
-.card p {
-  margin: 0;
-  opacity: 0.6;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 30ch;
-  text-wrap: balance;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 4rem 0;
-}
-
-.center::before {
-  background: var(--secondary-glow);
-  border-radius: 50%;
-  width: 480px;
-  height: 360px;
-  margin-left: -400px;
-}
-
-.center::after {
-  background: var(--primary-glow);
-  width: 240px;
-  height: 180px;
-  z-index: -1;
-}
-
-.center::before,
-.center::after {
-  content: "";
-  left: 50%;
+.Data {
+  z-index: 1;
   position: absolute;
-  filter: blur(45px);
-  transform: translateZ(0);
+  text-align: center;
+  top: 0;
+  left: 0;
+  margin-top: 15%;
+  width: 100%;
+  height: auto;
+  font-size: 40px;
+  font-family: 'Prompt', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
+  color: white;
+  /* background-color: rgba(179, 183, 179, 0.134); */
 }
-
-.logo {
-  position: relative;
+.Detail {
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  margin-top: 20%;
+  width: 100%;
+  height: auto;
+  font-size: 25px;
+  font-family: 'Prompt', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
+  color: white;
+  /* background-color: rgba(179, 183, 179, 0.134); */
 }
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+.DivTitle {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  margin-top: 28%;
+  /* background-color: rgba(179, 183, 179, 0.134); */
+}
+.DivT1 {
+  text-align: center;
+  width: 20%;
+  height: auto;
+}
+.DivT2 {
+  text-align: center;
+  width: 20%;
+  height: auto;
+  margin-left: 10%;
+}
+.Title {
+  font-size: 30px;
+  color: white;
+}
+@media (max-width: 1200px) {
+  .Data {
+    font-size: 35px;
   }
-
-  .card:hover span {
-    transform: translateX(4px);
+  .Detail {
+    font-size: 20px;
+  }
+  .Title {
+    font-size: 25px;
   }
 }
-
-@media (prefers-reduced-motion) {
-  .card:hover span {
-    transform: none;
+@media (max-width: 992px) {
+  .Data {
+    font-size: 30px;
+  }
+  .Detail {
+    font-size: 15px;
+  }
+  .Title {
+    font-size: 20px;
   }
 }
-
-/* Mobile */
-@media (max-width: 700px) {
-  .content {
-    padding: 4rem;
+@media (max-width: 768px) {
+  .Data {
+    font-size: 15px;
   }
-
-  .grid {
-    grid-template-columns: 1fr;
-    margin-bottom: 120px;
-    max-width: 320px;
-    text-align: center;
+  .Detail {
+    font-size: 10px;
   }
-
-  .card {
-    padding: 1rem 2.5rem;
+  .Title {
+    font-size: 10px;
   }
-
-  .card h2 {
-    margin-bottom: 0.5rem;
+}
+@media (max-width: 400px) {
+  .Data {
+    font-size: 10px;
   }
-
-  .center {
-    padding: 8rem 0 6rem;
+  .Detail {
+    font-size: 7px;
   }
-
-  .center::before {
-    transform: none;
-    height: 300px;
-  }
-
-  .description {
-    font-size: 0.8rem;
-  }
-
-  .description a {
-    padding: 1rem;
-  }
-
-  .description p,
-  .description div {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-  }
-
-  .description p {
-    align-items: center;
-    inset: 0 0 auto;
-    padding: 2rem 1rem 1.4rem;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background: linear-gradient(
-      to bottom,
-      rgba(var(--background-start-rgb), 1),
-      rgba(var(--callout-rgb), 0.5)
-    );
-    background-clip: padding-box;
-    backdrop-filter: blur(24px);
-  }
-
-  .description div {
-    align-items: flex-end;
-    pointer-events: none;
-    inset: auto 0 0;
-    padding: 2rem;
-    height: 200px;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
-    );
-    z-index: 1;
+  .Title {
+    font-size: 7px;
   }
 }
 
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
+/* About US เกี่ยวกับเรา ----------------------------------*/
+.DivAbout {
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+.AboutTitle {
+  font-size: 50px;
+  font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
+}
+.AboutDetail {
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 22px;
+  font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
+}
+@media (max-width: 1200px) {
+  .AboutTitle {
+    font-size: 45px;
+  }
+  .AboutDetail {
+    font-size: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .AboutTitle {
+    font-size: 35px;
+  }
+  .AboutDetail {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .AboutTitle {
+    font-size: 25px;
+  }
+  .AboutDetail {
+    font-size: 16px;
+  }
+}
+@media (max-width: 400px) {
+  .AboutTitle {
+    font-size: 20px;
+  }
+  .AboutDetail {
+    font-size: 14px;
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
+/* Perks & Benefits ------------- */
+.DivPerks {
+  display: flex;
+  align-items: center; /* จัดให้องค์ประกอบอยู่ตรงกลางแนวตั้ง */
+  /* width: 100%; */
+  height: auto;
+  padding-left: 8%;
+  padding-right: 8%;
+  background-color: rgba(179, 183, 179, 0.134);
+}
+.DivPerks2 {
+  display: flex;
+  align-items: flex-start; /* จัดให้อยู่ชิดด้านบน */
+  /* width: 100%; */
+  height: auto;
+  padding-left: 8%;
+  padding-right: 8%;
+  background-color: rgba(179, 183, 179, 0.134);
+}
+.DivP1 {
+  display: flex;
+  align-items: flex-start; /* จัดให้อยู่ชิดด้านบน */
+  width: 40%;
+  height: auto;
+}
+.DivP2 {
+  width: 60%;
+  height: auto;
+  padding-left: 10px;
+}
+.DivPrice {
+  display: flex;
+  align-items: flex-start; /* จัดให้อยู่ชิดด้านบน */
+  /* width: 100%; */
+  height: auto;
+}
+.Perks {
+  font-size: 50px;
+  font-family: 'Prompt', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
+  color: black;
+}
+.PerksTitle {
+  font-size: 30px;
+  margin-left: 10px;
+  font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
+  color: black;
+}
+.PerksDetail {
+  font-size: 20px;
+  font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
+  color: black;
+}
+.PerksPrice {
+  display: flex;
+  align-items: center; /* จัดให้องค์ประกอบอยู่ตรงกลางแนวตั้ง */
+  font-size: 30px;
+  font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
+  color: #000;
+}
+.PriceValue {
+  margin-left: 5px;
+  margin-right: 5px;
+  background: radial-gradient(at left, #f43607 48%, #ff44fff1 20%);
+  -webkit-background-clip: text; /* ทำให้พื้นหลังแสดงผ่านตัวอักษร */
+  -webkit-text-fill-color: transparent; /* ทำให้สีเติมในตัวอักษรโปร่งใส */
+}
+.DetailColor {
+  color: #e664e8;
+}
+.Price1 {
+  display: grid;
+  justify-content: center; /* จัดให้อยู่ตรงกลางในแนวนอน */
+  align-items: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+  width: 50%;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.Services {
+  display: grid;
+  justify-content: center; /* จัดให้อยู่ตรงกลางในแนวนอน */
+  align-items: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+  border-radius: 50px;         /* กำหนดรัศมีความโค้งของขอบ */
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 40px;
+  color: #ffffff;
+  background-color: #000;
+  font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
+}
+.webDetail {
+  display: grid;
+  justify-content: center; /* จัดให้อยู่ตรงกลางในแนวนอน */
+  align-items: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+  font-size: 20px;
+  font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
+}
+@media (max-width: 1200px) {
+  .Perks {
+    font-size: 45px;
   }
-
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+  .PerksTitle {
+    font-size: 25px;
+  }
+  .PerksDetail {
+    font-size: 16px;
+  }
+  .PerksPrice {
+    font-size: 25px;
+  }
+  .webDetail {
+    font-size: 15px;
+  }
+  .Services {
+    width: 150px;
+    font-size: 15px;
   }
 }
-
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
+@media (max-width: 992px) {
+  .Perks {
+    font-size: 35px;
   }
-  to {
-    transform: rotate(0deg);
+  .PerksTitle {
+    font-size: 20px;
+  }
+  .PerksDetail {
+    font-size: 14px;
+  }
+  .PerksPrice {
+    font-size: 20px;
+  }
+  .webDetail {
+    font-size: 10px;
+  }
+  .Services {
+    width: 130px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .Perks {
+    font-size: 25px;
+  }
+  .PerksTitle {
+    font-size: 15px;
+  }
+  .PerksDetail {
+    font-size: 13px;
+  }
+  .PerksPrice {
+    font-size: 16px;
+  }
+  .webDetail {
+    font-size: 7px;
+  }
+  .Services {
+    width: 120px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 400px) {
+  .Perks {
+    font-size: 20px;
+  }
+  .PerksTitle {
+    font-size: 10px;
+  }
+  .PerksDetail {
+    font-size: 12px;
+  }
+  .PerksPrice {
+    font-size: 14px;
+  }
+  .webDetail {
+    font-size: 5px;
+  }
+  .Services {
+    width: 100px;
+    font-size: 10px;
+  }
+}
+/* Contact us ------------- */
+.DivContact {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 10%;
+  background-color: rgba(179, 183, 179, 0.527);
+}
+.DivC1 {
+  display: flex;
+  align-items: center; 
+  width: 100%;
+  height: auto;
+}
+.ContactDetail {
+  margin-left: 3%;
+  font-size: 30px;
+  width: 100%;
+  font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
+}
+.contactBox {
+  position: absolute;
+  text-align: center;
+  justify-content: center; /* จัดให้อยู่ตรงกลางในแนวนอน */
+  width: 100%;
+  height: auto;
+  color: #000;
+  background-color: #413D31;
+}
+.contactBoxText {
+  color: #ffffff;
+}
+@media (max-width: 1200px) {
+  .ContactDetail {
+    font-size: 20px;
+  }
+  .contactBox {
+    font-size: 10px;
   }
 }
