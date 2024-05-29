@@ -194,7 +194,7 @@
   height: auto;
 }
 .DivP2 {
-  display: flex;
+  /* display: flex; */
   flex-direction: row;    /* จัดเรียงองค์ประกอบย่อยในแนวนอน */
   justify-content: center; /* จัดการช่องว่างระหว่างองค์ประกอบย่อย (ออปชั่น) */
   align-items: center;
