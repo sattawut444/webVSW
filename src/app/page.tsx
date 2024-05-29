@@ -127,8 +127,10 @@ const page = (props: Props) => {
         <h1 className={styles.ContactDetail}>ติดต่อเรา</h1>
       </div>
       <h1 className={styles.ContactDetail}>Tel : 096-820-2695 (24 Hr.)</h1>
-      <img className={styles['Image-Logo']} src="/iconLine.png" alt="Line" style={{ width: '5%', height: "auto" }} />
-      <img className={styles['Image-Logo']} src="/facebook.png" alt="Facebook" style={{ width: '5%', height: "auto" }} />
+      <div className={styles.DivC2}>
+        <img className={styles['Image-Logo']} src="/iconLine.png" alt="Line" style={{ width: '5%', height: "auto" }} />
+        <img className={styles['Image-Logo']} src="/iconFacebook.png" alt="Facebook" style={{ width: '3.5%', height: "auto" }} />
+      </div>
     </div>
     <div className={styles.contactBox}>
       <p className={styles.contactBoxText}>© 2024 V.SW. All rights reserved.</p>

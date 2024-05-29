@@ -392,6 +392,10 @@
   width: 100%;
   height: auto;
 }
+.DivC2 {
+  display: flex;
+  align-items: center; 
+}
 .ContactDetail {
   margin-left: 3%;
   font-size: 30px;
