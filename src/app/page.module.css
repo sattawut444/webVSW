@@ -353,6 +353,13 @@
   }
 }
 @media (max-width: 400px) {
+  .DivPrice {
+    display: flex;          /* ตั้งค่าเป็น flex container */
+    flex-wrap: wrap;           /* ทำให้ flex items ห่อกลับเป็นแถวใหม่เมื่อความกว้างของหน้าจอแคบลง */
+    flex-direction: row;    /* จัดเรียงองค์ประกอบย่อยในแนวนอน */
+    justify-content: center; /* จัดการช่องว่างระหว่างองค์ประกอบย่อย (ออปชั่น) */
+    align-items: center;
+  }
   .Perks {
     font-size: 20px;
     font-family: 'Prompt', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
