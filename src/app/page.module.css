@@ -57,45 +57,57 @@
 @media (max-width: 1200px) {
   .Data {
     font-size: 35px;
+    font-family: 'Prompt', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .Detail {
     font-size: 20px;
+    font-family: 'Prompt', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .Title {
     font-size: 25px;
+    font-family: 'Prompt', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
 }
 @media (max-width: 992px) {
   .Data {
     font-size: 30px;
+    font-family: 'Prompt', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .Detail {
     font-size: 15px;
+    font-family: 'Prompt', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .Title {
     font-size: 20px;
+    font-family: 'Prompt', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
 }
 @media (max-width: 768px) {
   .Data {
     font-size: 15px;
+    font-family: 'Prompt', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .Detail {
     font-size: 10px;
+    font-family: 'Prompt', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .Title {
     font-size: 10px;
+    font-family: 'Prompt', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
 }
 @media (max-width: 400px) {
   .Data {
     font-size: 10px;
+    font-family: 'Prompt', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .Detail {
     font-size: 7px;
+    font-family: 'Prompt', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .Title {
-    font-size: 7px;
+    font-size: 5px;
+    font-family: 'Prompt', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
 }
 
@@ -118,33 +130,41 @@
 @media (max-width: 1200px) {
   .AboutTitle {
     font-size: 45px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .AboutDetail {
     font-size: 20px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
 }
 @media (max-width: 992px) {
   .AboutTitle {
     font-size: 35px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .AboutDetail {
     font-size: 18px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
 }
 @media (max-width: 768px) {
   .AboutTitle {
     font-size: 25px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .AboutDetail {
     font-size: 16px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
 }
 @media (max-width: 400px) {
   .AboutTitle {
     font-size: 20px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .AboutDetail {
     font-size: 14px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
 }
 
@@ -174,7 +194,12 @@
   height: auto;
 }
 .DivP2 {
+  display: flex;
+  flex-direction: row;    /* จัดเรียงองค์ประกอบย่อยในแนวนอน */
+  justify-content: center; /* จัดการช่องว่างระหว่างองค์ประกอบย่อย (ออปชั่น) */
+  align-items: center;
   width: 60%;
+  flex-wrap: wrap;           /* ทำให้ flex items ห่อกลับเป็นแถวใหม่เมื่อความกว้างของหน้าจอแคบลง */
   height: auto;
   padding-left: 10px;
 }
@@ -240,6 +265,7 @@
 }
 .webDetail {
   display: grid;
+  text-align: center;
   justify-content: center; /* จัดให้อยู่ตรงกลางในแนวนอน */
   align-items: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
   font-size: 20px;
@@ -248,85 +274,109 @@
 @media (max-width: 1200px) {
   .Perks {
     font-size: 45px;
+    font-family: 'Prompt', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .PerksTitle {
     font-size: 25px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .PerksDetail {
     font-size: 16px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .PerksPrice {
     font-size: 25px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .webDetail {
     font-size: 15px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .Services {
     width: 150px;
     font-size: 15px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
 }
 @media (max-width: 992px) {
   .Perks {
     font-size: 35px;
+    font-family: 'Prompt', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .PerksTitle {
     font-size: 20px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .PerksDetail {
     font-size: 14px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .PerksPrice {
     font-size: 20px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .webDetail {
     font-size: 10px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .Services {
     width: 130px;
     font-size: 15px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
 }
 @media (max-width: 768px) {
   .Perks {
     font-size: 25px;
+    font-family: 'Prompt', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .PerksTitle {
     font-size: 15px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .PerksDetail {
     font-size: 13px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .PerksPrice {
     font-size: 16px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .webDetail {
     font-size: 7px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .Services {
     width: 120px;
     font-size: 13px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
 }
 @media (max-width: 400px) {
   .Perks {
     font-size: 20px;
+    font-family: 'Prompt', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .PerksTitle {
     font-size: 10px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .PerksDetail {
     font-size: 12px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .PerksPrice {
     font-size: 14px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .webDetail {
     font-size: 5px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .Services {
     width: 100px;
     font-size: 10px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
 }
 /* Contact us ------------- */
@@ -363,8 +413,27 @@
 @media (max-width: 1200px) {
   .ContactDetail {
     font-size: 20px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
   .contactBox {
     font-size: 10px;
+  }
+}
+@media (max-width: 992px) {
+  .ContactDetail {
+    font-size: 15px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
+  }
+}
+@media (max-width: 768px) {
+  .ContactDetail {
+    font-size: 13px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
+  }
+}
+@media (max-width: 400px) {
+  .ContactDetail {
+    font-size: 7px;
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
 }
